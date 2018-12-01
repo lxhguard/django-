@@ -1,0 +1,12 @@
+#BlankTable th,td{
+    background-color: #f0fcff;
+    border: 0.5px solid black;
+    width: 50px;
+}
+
+#FixedTable th,td{
+    background-color: #f0fcff;
+    border: 0.5px solid black;
+    width: 100px;
+}
+

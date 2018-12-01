@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>纳税人信用指标权重确定</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'CreditRating.css' %}">
+
+    
+
+</head>
+
+<body>
+    <div id="boxA">
+    
+    </div>
+    <button id="buttonA" onclick="MakeTableA()">生成A表</button>
+    <button id="submissionA">提交A表</button>
+
+    
+
+    <br>
+
+    <div id="boxS">
+    
+    </div>
+    <button id="buttonS" onclick="MakeTableS()">生成S表</button>
+    <button id="submissionS">提交S表</button>
+
+    <button id="buttonSuanFa">运行算法</button>
+
+     {% load staticfiles %}
+    <script src="{% static 'finally.js' %}"></script>
+</body>
+
+</html>
+

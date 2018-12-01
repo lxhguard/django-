@@ -1,0 +1,25 @@
+【文件】
+50tables.xlsx：生成的50张S1，S2表格的excel文件
+weight.csv：那个学姐给我的第二个算法的样例输入之一
+weight_8.csv：我根据第一个算法算出来的权重保存成的csv文件（8x8数据算出来8个权重）
+	       因为内容格式与第二个算法要的数据不同，所以单独存出来
+index.csv：第二个算法的样例输入之一
+report.csv：第二个算法的输出结果
+
+
+【代码】
+report.py：第二个算法，我没修改
+weight_datemining3.py：第一个算法，我根据设计的数据库和excel文件的格式对数据的读取进行了更改
+		        而且增加了将结果保存为.csv文件的函数
+csv_mysql.py：.csv文件和MySQL数据库的相互存储，用于weight.csv,index.csv和report.csv这三个文件
+	       使用之前需要初始化数据库成相应的格式，再database_inis.py中我定义好了函数
+database_init.py：初始化数据库，在数据库中新建一个数据库 database_0
+		在其中建三个表，分别为weight_   index_   eport_
+		数据库和表的名称都可以更改，但在函数之间必须统一
+mysql_to_excel.py：MySQL数据库中的数据存储为excel表格
+
+
+
+
+
+

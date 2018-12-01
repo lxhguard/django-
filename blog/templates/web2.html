@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>请输入新的内容</title>
+</head>
+<body>
+    <form action="{% url 'myapp:3' %}" method="post">
+        {%  csrf_token %}
+        <input type="text" name="input[]">
+        <input type="text" name="input[]">
+        <br/>
+        <input type="text" name="input[]">
+        <input type="text" name="input[]">
+        <br/>
+        <input type="text" name="input[]">
+        <input type="text" name="input[]">
+        <br/>
+        <input type="text" name="input[]">
+        <input type="text" name="input[]">
+        <br/>
+        <input type="submit"value="提交">
+    </form>
+</body>
+</html>
